@@ -10,5 +10,19 @@ public class Scenes : MonoBehaviour
         SceneManager.LoadScene(_ceneNumber);
     }
 
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        
+        {
+         SceneManager.LoadScene(0);
+        }
+    }
+    public void QuitGame() 
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+    }
+
 
 }
